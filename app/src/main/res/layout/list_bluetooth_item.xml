@@ -1,0 +1,60 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+        android:id="@+id/item_bl"
+            android:visibility="visible"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_bluetooth_black_24dp" />
+        <eo.view.bluetoothstate.BluetoothStateView
+            android:id="@+id/item_anim_bl"
+            android:visibility="gone"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            app:bluetoothColor="@android:color/black"
+            app:bluetoothTheme="rounded"
+            app:bluetoothState="connecting" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/name"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HC-06"
+        android:textAppearance="?android:attr/textAppearanceButton"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="5dp"
+        android:text="Сопряжено"
+        android:textColor="@android:color/black" />
+    </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

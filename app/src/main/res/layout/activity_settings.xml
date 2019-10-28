@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    tools:context=".MainActivity"
+    android:id="@+id/osnova"
+    android:background="@color/background"
+    android:contextClickable="true">
+
+    <TextView
+        android:id="@+id/connections"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:layout_marginTop="310dp"
+        android:layout_marginLeft="30dp"
+        android:onClick="onClickButConnections"
+        android:background="@drawable/btn_black_style"
+        android:padding="8dp"
+        android:textColor="@android:color/white"
+        android:text="Подклчюения" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="256dp"
+        android:text="Работа в фоне" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switch1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="143dp"
+        android:text="Автоматическое подключение" />
+
+    <br.vince.owlbottomsheet.OwlBottomSheet
+        android:id="@+id/owl_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>
